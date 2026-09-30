@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ChatGPT</title>
+
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <main class="app">
+
+    <img src="icon.svg" class="logo" alt="ChatGPT">
+
+    <h1>ChatGPT</h1>
+
+    <p>Твой ChatGPT на планшете</p>
+
+    <a class="button" href="https://chatgpt.com/">
+      Открыть ChatGPT
+    </a>
+
+  </main>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./sw.js");
+    }
+  </script>
+
+</body>
+</html>
